@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dcasagalloExamen.Views.resumen"
+             Title="resumen">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="10"
+        Spacing="15">
+
+            <Label 
+                x:Name="lblTitulo"
+                FontSize="15"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
+
+            <Label
+                x:Name="lblNombre"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+
+            <Label
+                x:Name="lblApellido"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+
+            <Label
+                x:Name="lblEdad"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+
+            <Label
+                x:Name="lblFecha"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+
+            <Label
+                x:Name="lblCiudad"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+
+            <Label
+                x:Name="lblPais"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+
+            <Label
+                x:Name="lblMontoInicial"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+
+            <Label
+                x:Name="lblPagoMensual"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+
+            <Label
+                x:Name="lblPagoTotal"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

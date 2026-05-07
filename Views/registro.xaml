@@ -54,7 +54,7 @@
                     Grid.Row="1"
                     Grid.Column="0"/>
 
-                <Picker x:Name="pPises"
+                <Picker x:Name="pPaises"
                         Title="Pais"
                         Grid.Row="1"
                         Grid.Column="1">
@@ -69,12 +69,12 @@
                 <Label
                     Text="Ciudad:"
                     FontSize="18"
-                    Grid.Row="3"
+                    Grid.Row="2"
                     Grid.Column="0"/>
 
                 <Picker x:Name="pCiudades"
                         Title="Ciudad"
-                        Grid.Row="3"
+                        Grid.Row="2"
                         Grid.Column="1">
                     <Picker.Items>
                         <x:String>Quito</x:String>
@@ -87,50 +87,90 @@
                 <Label
                     Text="Monto Inicial:"
                     FontSize="18"
-                    Grid.Row="4"
+                    Grid.Row="3"
                     Grid.Column="0"/>
 
                 <Entry
                     x:Name="txtMontoInicial"
                     Placeholder="Ingrese el Monto inicial"
-                    Grid.Row="4"
+                    Grid.Row="3"
                     Grid.Column="1"/>
 
                 <Button 
                     x:Name="btnCalcularPago"
                     Text="Calcular Pago Mensual"
-                    Grid.Row="5"
+                    Clicked="btnCalcularPago_Clicked"
+                    Grid.Row="4"
                     Grid.Column="0"/>
+
+                <Label
+                    x:Name="lblValorAPagar"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                    FontSize="18"
+                    Grid.Row="4"
+                    Grid.Column="1"/>
+            </Grid>
+
+
+            <Grid 
+                RowSpacing="10"
+                ColumnSpacing="10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    Text="Nombre"
+                    FontSize="18"
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+
+                <Entry
+                    x:Name="txtNombre"
+                    Placeholder="Nombre"
+                    Grid.Row="1"
+                    Grid.Column="0"/>
+
+                <Label
+                    Text="Apellido"
+                    FontSize="18"
+                    Grid.Row="0"
+                    Grid.Column="1"/>
+
+                <Entry
+                    x:Name="txtApellido"
+                    Placeholder="Apellido"
+                    Grid.Row="1"
+                    Grid.Column="1"/>
+
+                <Label
+                    Text="Edad"
+                    FontSize="18"
+                    Grid.Row="0"
+                    Grid.Column="2"/>
+
+                <Entry
+                    x:Name="txtEdad"
+                    Placeholder="Edad"
+                    Grid.Row="1"
+                    Grid.Column="2"/>
 
             </Grid>
 
-            
-
-            
-
-            <Entry
-            x:Name="txt_usuario_registro"
-            Placeholder="Ingrese el usuario"/>
-
-            <Entry
-            x:Name="txt_clave_registro"
-            Placeholder="Ingrese su clave"/>
-
-            <Entry
-            x:Name="txt_Edad"
-            Placeholder="Ingrese su edad"/>
-
-            <Entry
-            x:Name="txt_peso"
-            Placeholder="Ingrese su peso"/>
-
-            
-
             <Button
-            x:Name="btnGuardarUsuario"
-            Text="Guardar Usuario"/>
+                x:Name="btnResumen"
+                Text="Ver Resumen"
+                Clicked="btnResumen_Clicked"/>
             <!--Style="{StaticResource estiloBoton}"-->
-
+            
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
