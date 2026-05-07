@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dcasagalloExamen.Views.registro"
+             Title="registro">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="15"
+        Spacing="24">
+            
+            <Label
+                x:Name="lblSaludoUsuario"
+                HorizontalOptions="End"
+                FontSize="11"/>
+
+            <Label 
+                Text="REGISTRO"
+                FontSize="20"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
+
+            <Grid 
+                RowSpacing="10"
+                ColumnSpacing="10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    Text="Fecha:"
+                    FontSize="18"
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+
+                <DatePicker 
+                    x:Name="dpFecha" 
+                    Format="MM/dd/yyyy"
+                    Date="01/01/2026"
+                    Grid.Row="0"
+                    Grid.Column="1"/>
+
+                <Label
+                    Text="Pais:"
+                    FontSize="18"
+                    Grid.Row="1"
+                    Grid.Column="0"/>
+
+                <Picker x:Name="pPises"
+                        Title="Pais"
+                        Grid.Row="1"
+                        Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>Ecuador</x:String>
+                        <x:String>Colombia</x:String>
+                        <x:String>Chile</x:String>
+                        <x:String>USA</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label
+                    Text="Ciudad:"
+                    FontSize="18"
+                    Grid.Row="3"
+                    Grid.Column="0"/>
+
+                <Picker x:Name="pCiudades"
+                        Title="Ciudad"
+                        Grid.Row="3"
+                        Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>Quito</x:String>
+                        <x:String>Bogotá</x:String>
+                        <x:String>Santiago</x:String>
+                        <x:String>New York</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label
+                    Text="Monto Inicial:"
+                    FontSize="18"
+                    Grid.Row="4"
+                    Grid.Column="0"/>
+
+                <Entry
+                    x:Name="txtMontoInicial"
+                    Placeholder="Ingrese el Monto inicial"
+                    Grid.Row="4"
+                    Grid.Column="1"/>
+
+                <Button 
+                    x:Name="btnCalcularPago"
+                    Text="Calcular Pago Mensual"
+                    Grid.Row="5"
+                    Grid.Column="0"/>
+
+            </Grid>
+
+            
+
+            
+
+            <Entry
+            x:Name="txt_usuario_registro"
+            Placeholder="Ingrese el usuario"/>
+
+            <Entry
+            x:Name="txt_clave_registro"
+            Placeholder="Ingrese su clave"/>
+
+            <Entry
+            x:Name="txt_Edad"
+            Placeholder="Ingrese su edad"/>
+
+            <Entry
+            x:Name="txt_peso"
+            Placeholder="Ingrese su peso"/>
+
+            
+
+            <Button
+            x:Name="btnGuardarUsuario"
+            Text="Guardar Usuario"/>
+            <!--Style="{StaticResource estiloBoton}"-->
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

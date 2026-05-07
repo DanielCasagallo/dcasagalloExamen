@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dcasagalloExamen.Views.login"
+             Title="login">
+    <ScrollView>
+        <VerticalStackLayout 
+        Padding="10"
+        Spacing="15">
+
+            <Image Source="israel.jpg"
+                    WidthRequest="100"/>
+            
+            <Label 
+                Text="Cursos UISRAEL"
+                TextColor="Red"
+                FontSize="20"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
+
+
+            <Grid 
+              RowSpacing="10"
+              ColumnSpacing="10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    x:Name="lblusuario"
+                    Text="Usuario"
+                    FontSize="15"
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+
+                <Entry
+                    x:Name="txtUsuario"
+                    Placeholder="Ingrese su usuario"
+                    Grid.Row="0"
+                    Grid.Column="1"/>
+
+                <Label
+                    x:Name="lblClave"
+                    Text="Clave"
+                    Grid.Row="1"
+                    Grid.Column="0"/>
+
+                <Entry
+                    x:Name="txtClave"
+                    Placeholder="Ingrese su clave"
+                    IsPassword="True"
+                    Grid.Row="1"
+                    Grid.Column="1"/>
+            </Grid>
+
+            <Button
+                x:Name="btnIniciarSesion"
+                Text="Iniciar Sesión"
+                Grid.Row="2"
+                Grid.Column="0"
+                Clicked="btnIniciarSesion_Clicked"/>
+            <!--Style="{StaticResource estiloBoton}"-->
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
