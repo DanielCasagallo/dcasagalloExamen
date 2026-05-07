@@ -4,11 +4,38 @@
              xmlns:local="clr-namespace:dcasagalloExamen"
              x:Class="dcasagalloExamen.App">
     <Application.Resources>
-        <ResourceDictionary>
+        <!--<ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+        </ResourceDictionary>-->
+
+        <!--Estilos a los botones-->
+        <Style x:Key="estiloBoton" TargetType="Button">
+            <Setter Property="BorderColor" Value="BlueViolet"/>
+            <Setter Property="TextColor" Value="Beige"/>
+            <Setter Property="BackgroundColor" Value="Blue"/>
+        </Style>
+
+        <!-- Estilo para Label -->
+        <Style x:Key="estiloLabel" TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+
+        <!-- Estilo para Entry -->
+        <Style x:Key="estiloCajaTexto" TargetType="Entry">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="BackgroundColor" Value="#2C2C2C"/>
+            <Setter Property="PlaceholderColor" Value="Gray"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="HeightRequest" Value="50"/>
+        </Style>
+
+
     </Application.Resources>
 </Application>

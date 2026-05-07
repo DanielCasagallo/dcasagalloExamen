@@ -137,7 +137,8 @@
                     x:Name="txtNombre"
                     Placeholder="Nombre"
                     Grid.Row="1"
-                    Grid.Column="0"/>
+                    Grid.Column="0"
+                    Style="{StaticResource estiloCajaTexto}"/>
 
                 <Label
                     Text="Apellido"

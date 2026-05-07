@@ -12,7 +12,8 @@
                 x:Name="lblTitulo"
                 FontSize="15"
                 VerticalOptions="Center" 
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                Style="{StaticResource estiloLabel}"/>
 
             <Label
                 x:Name="lblNombre"

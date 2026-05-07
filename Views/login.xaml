@@ -64,8 +64,9 @@
                 Text="Iniciar Sesión"
                 Grid.Row="2"
                 Grid.Column="0"
-                Clicked="btnIniciarSesion_Clicked"/>
-            <!--Style="{StaticResource estiloBoton}"-->
+                Clicked="btnIniciarSesion_Clicked"
+                Style="{StaticResource estiloBoton}"/>
+        
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
